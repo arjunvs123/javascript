@@ -1,0 +1,154 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="demo"></p>
+	<p id="demo1"></p>
+	<ul id="workshop"> 
+		
+	</ul>
+	<input type="text" name="" id="array">
+	<button onclick="myFun()">CLICK TO INSERT</button>
+	<script type="text/javascript">
+		let workshopitems = document.getElementById('workshop');
+		console.log(workshopitems);
+		myArr = ["car","plane","bus","bike","train"];
+		let li = document.querySelectorAll("li")
+		let li = document.getElementsByTagName("li")
+		console.log(li);
+		li[0].innerHTML = myArr[0];
+		li[1].innerHTML = myArr[1];
+		li[2].innerHTML = myArr[2];
+		li[3].innerHTML = myArr[3];
+
+		for(i=0;i<myArr.length;i++){
+			let li = document.createElement("li");
+			// console.log(li);
+			li.innerHTML = myArr[i];
+			console.log(li.innerHTML);
+			workshopitems.appendChild(li);
+		}
+
+ 	</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="demo"></p>
+	<p id="demo1"></p>
+	<ul id="fruitshop">
+	</ul>
+	<script type="text/javascript">
+		myArr = ["orange","apple","mango"];
+		myArr[1] = "grapes";
+		console.log(myArr);
+		document.getElementById('demo').innerHTML = myArr
+		let text = "<ul>";
+		for(i=0;i<myArr.length;i++){
+			text = text + "<li>" + myArr[i] + "</li>";
+		}
+		text = text + "</ul>";
+		document.getElementById('demo1').innerHTML = text;
+		let fruititem = document.getElementById('fruitshop');
+		for(i=0;i<myArr.length;i++){
+			let li = document.createElement("li");
+			li.innerHTML = myArr[i];
+			console.log(li.innerHTML);
+			fruititem.appendChild(li);
+		}
+	</script>
+</body>
+</html> -->
+
+<!-- Pushing an element in an array
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="demo"></p>
+	<!-- <input type="text" name="" id="array">
+	<button onclick="myFun()">CLICK TO INSERT ELEMENT</button> -->
+	<script type="text/javascript">
+		let myArr = [];
+		// function myFun() {
+		// 	document.getElementById('demo').innerHTML = myArr;
+		// 	let item = document.getElementById('array').value;
+		// 	myArr.push(item);
+		// 	document.getElementById('demo').innerHTML = myArr;
+		// 	document.getElementById('array').value = "";
+		// 	// console.log(myArr);
+		// 	// document.getElementById('demo').innerHTML = myArr;
+
+		// }
+		// myArr2 = ["mango","pineapple","orange","grapes"];
+		// myArr2.splice(0,2);
+		// console.log(myArr2);
+		// console.log(myArr2[0]);
+		// myArr3 = myArr2.slice(2);
+		// console.log(myArr2);
+		// console.log(myArr3);
+		// console.log(myArr2.sort());
+		// console.log(myArr2.reverse());
+		var myArr4 = [2,50,100,8,24];
+		// console.log(myArr4.sort(function(a,b){
+		// 	return a-b;
+		// }));
+		// console.log(myArr4.sort(function(a,b){
+		// 	return b-a;
+		// }))
+		// document.getElementById('demo').innerHTML = myFun(myArr4);
+		// function myFun(arr) {
+		// 	return Math.max.apply(null,arr);
+		// }
+
+		//forEach
+
+		// var text = 0;
+		// var value = myArr4.forEach(myFun);
+	
+		// document.getElementById('demo').innerHTML = text;
+		// console.log(text);
+		// function myFun(value) {
+		// 	text = text + Number(value) ;
+		// }
+		// console.log(value);
+
+		// map()
+
+
+		// var text = 0;
+		// var value = myArr4.map(myFun);
+	
+		// document.getElementById('demo').innerHTML = text;
+		// console.log(text);
+		// function myFun(value) {
+		// 	text = text + Number(value) ;
+		// 	var num = 10;
+		// 	return num;
+		// }
+		// console.log(value);
+
+		//filter()
+		
+		var text = 0;
+		var value = myArr4.filter(myFun);
+		document.getElementById('demo').innerHTML = text;
+		console.log(text);
+		function myFun(value) {
+			return value > 20;
+		}
+		console.log(value);
+	</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter a number :
+    <input type="text" id="demo">
+    <button id="btn" onclick="myFun()">CLICK</button>
+    <script>
+        var num = document.getElementById('demo')
+        function myFun() {
+            var fact=1;
+            var x = num.value;
+            if(x==1){
+                console.log(1);
+            }
+            else{
+                for(i=1;i<=x;i++){
+                    fact = fact*i;
+                }
+                console.log(fact);
+            }
+            
+        }
+    </script>
+</body>
+</html>

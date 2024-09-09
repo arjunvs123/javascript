@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person = {"name":"Rahul","age":26,"address":{"street":"ABC Lane","City":"Trivandrum"},
+    "intrest":["Reading","Playing"]};
+    console.log(person.name);
+    console.log(person.address.street);
+    console.log(person.intrest[1]);
+        let person1 = {
+            name : "Kevin",
+            Age : 26,
+            Address : {
+                Street : "ABC Lane",
+                City : "Trivandrum"
+            },
+            intrest : ["Reading","Playing"]
+        }
+        console.log(JSON.stringify(person1));
+    </script>
+</body>
+</html>

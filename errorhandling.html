@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="demo">
+    <button type="button" onclick="myFun()">CLICK HERE</button>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        function myFun() {
+            var x = document.getElementById('demo').value;
+            var msg = document.getElementById("demo1");
+            try {
+                if(x=="")
+                {
+                    throw "THE INPUT FIELD IS EMPTY";
+                }
+                if(isNaN(x))
+                {
+                    throw "IT IS NOT A NUMBER";
+                }     
+                x = Number(x);
+                if(x<3)
+                {  
+                    throw "THE NUMBER YOU HAVE ENTERTED IS TOO SMALL";
+                }
+                if(x>20)
+                {
+                    throw "THE NUMBER YOU HAVE ENTERED IS TOO BIG";
+                }
+            }
+            catch (error) {
+                msg.innerHTML =  "ERROR " + error; 
+            }
+            finally{
+                document.getElementById('demo').value = " ";
+                document.getElementById('demo2').innerHTML = x;
+                if (x>=3 && x<=20) {
+                    document.getElementById('demo3').innerHTML = "WELL DONE!!!";
+                }
+                else{
+                    document.getElementById('demo3').innerHTML = " ";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="exam1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h4>CLICK HERE TO SEE THE LOTTERY RESULTS</h4>
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal" onclick="myFun()">
+          CHECK RESULT
+        </button>
+        <div class="modal" id="myModal">
+          <div class="modal-dialog modal-sm ">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">THE WINNER IS.......</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                <h1 id="demo2"></h1>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+              </div>
+          </div>
+        </div>
+        <h1 id="demo"></h1>
+      </div>
+    <script src="exam1.js"></script>
+</body>
+</html>

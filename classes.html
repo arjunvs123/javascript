@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        class student {
+            constructor(name){
+                this.studentname = name;
+            }
+            fun1(){
+                return this.studentname;
+            }
+        }
+        class std extends student{
+            constructor(name,age){
+                super(name);
+                this.age = age;
+            }
+            fun2(){
+                return "THE STUDENT NAME IS " + this.fun1() + " \n Roll  no :  " + this.age;
+            }
+        }
+        std1 =  new std("Praveen" , 22);
+        document.getElementById('demo').innerHTML = std1.fun2();
+        console.log(std.fun2());
+    </script>
+</body>
+</html>

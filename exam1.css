@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(233, 221, 210);
+    margin: auto;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.buttons{
+    padding: 8px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+h1{
+    color: red;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="exam.css">
+</head>
+<body>
+    <h2 class="calheader">CALCULATOR</h2>
+    <div class="container">
+        <label for="num1">ENTER THE FIRST NUMBER</label>
+        <br>
+        <input type="text" id="num1" class="inputfield">
+        <br>
+        <label for="num1">ENTER THE SECOND NUMBER</label>
+        <br>
+        <input type="text" id="num2" class="inputfield">
+        <br>
+        <br>
+        <label for="maths">CHOOSE AN OPERATION :</label>
+        &nbsp;
+        <select name="maths" id="maths" class="inputfield dropdownfield">
+          <option value="+">ADDITION(+)</option>
+          <option value="-">SUBTRACTION(-)</option>
+          <option value="*">MULTIPLICATION(*)</option>
+          <option value="/">DIVISION(/)</option>
+        </select> 
+        <br>
+        <br>
+        <button type="button" class="buttonfield buttons" onclick="myFun()">=</button>
+        <br>
+        <br>
+        <label for="num1">RESULT</label>
+        <br>
+        <input type="text" id="result" class="inputfield">
+    </div>
+    <script src="exam.js"></script>
+</body>
+</html>
